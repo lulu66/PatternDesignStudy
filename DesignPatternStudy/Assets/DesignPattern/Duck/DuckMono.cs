@@ -6,6 +6,7 @@ public class DuckMono : MonoBehaviour
 {
     void Start()
     {
+        //体现针对接口编程
         Duck duck = new ModelDuck();
         duck.Swin();
         duck.Display();

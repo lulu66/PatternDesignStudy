@@ -26,6 +26,7 @@ public abstract class Duck
 	{
 		flyBehavior = fb;
 	}
+	//封装动态变化的行为
 	protected QuackBehavior quackBehavior;
 	protected FlyBehavior flyBehavior;
 }
