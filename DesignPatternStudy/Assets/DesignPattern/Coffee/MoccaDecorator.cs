@@ -18,9 +18,14 @@ public class MoccaDecorator : CondimentDecorator
 
 	public override string GetDescription()
 	{
-		description = coffee.GetDescription() + "mocca,";
+		description = coffee.GetDescription() + "mocca," + GetAdditionalInfo();
 		return description;
 
 	}
 
+	//新的方法/行为
+	public string GetAdditionalInfo()
+	{
+		return "this is middle size coffee, Please enjoy it.";
+	}
 }
