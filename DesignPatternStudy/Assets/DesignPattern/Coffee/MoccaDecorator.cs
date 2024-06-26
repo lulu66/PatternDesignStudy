@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoccaDecorator : CondimentDecorator
+{
+	Beverage coffee;
+
+	public MoccaDecorator(Beverage coffee)
+	{
+		this.coffee = coffee;
+	}
+	public override float Cost()
+	{
+		return coffee.Cost() + 0.23f;
+	}
+
+
+	public override string GetDescription()
+	{
+		description = coffee.GetDescription() + "mocca,";
+		return description;
+
+	}
+
+}
